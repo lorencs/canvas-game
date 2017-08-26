@@ -1,0 +1,11 @@
+body{
+	margin: 0px;
+	background-color: #f5f8f9;
+}
+
+#canvas{
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
