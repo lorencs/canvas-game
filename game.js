@@ -1,5 +1,7 @@
 var lastUpdate = new Date().getTime();
 var ctx = null;
+var oSeed = range(1,100000, Math.random());
+var seed = oSeed;
 
 var Game = {
 	map: mapObject,
@@ -71,4 +73,6 @@ function draw(){
 	ctx.fillRect(0, 0, canvas.width, canvas.height);
 	Game.map.drawMap(ctx);
 	Game.time.drawFPS();
+	ctx.fillStyle = "#02ca02"; 
+	ctx.fillText("seed: " + oSeed, 10, 26);
 }
